@@ -13,7 +13,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import { checkUserSession } from "./redux/user/user.action";
 
 class App extends React.Component {
-  unsubscibeFromAuth = null;
+  unsubscribeFromAuth = null;
 
   componentDidMount() {
     const { checkUserSession } = this.props;
@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
-    this.unsubscibeFromAuth();
+    this.unsubscribeFromAuth();
   }
 
   render() {
@@ -58,6 +58,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(
-  mapDispatchToProps,
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(App);
