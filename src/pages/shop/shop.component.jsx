@@ -2,14 +2,14 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { fetchCollectionsStartAsnyc } from "./shop.action";
+import { fetchCollectionsStart } from "./shop.action";
 import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
 import CollectionPageContainer from "../collection/collection.container";
 
 class ShopPage extends React.Component {
   componentDidMount() {
-    const { fetchCollectionsStartAsnyc } = this.props;
-    fetchCollectionsStartAsnyc();
+    const { fetchCollectionsStart } = this.props;
+    fetchCollectionsStart();
 
     // fetch(
     //   "https://firestore.googleapis.com/v1/projects/ecommerce-db-aa949/databases/(default)/documents/collections"
@@ -37,7 +37,7 @@ class ShopPage extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchCollectionsStartAsnyc: () => dispatch(fetchCollectionsStartAsnyc())
+  fetchCollectionsStart: () => dispatch(fetchCollectionsStart())
 });
 
 export default connect(
