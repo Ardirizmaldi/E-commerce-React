@@ -5,6 +5,18 @@ import { selectCollection } from "../../redux/shop/shop.selector";
 import CollectionItem from "../../components/collection-item/collection-item.component";
 
 const CollectionPage = ({ collection }) => {
+  // IMPLEMENT HOOKS CLEANING
+  // useEffect(() => {
+  //   console.log("im subscribing");
+  //   const unsubscribeFromCollections = firestore
+  //     .collection("collections")
+  //     .onSnapshot(snapshot => console.log(snapshot));
+  //   return () => {
+  //     console.log("subscribe");
+  //     unsubscribeFromCollections();
+  //   };
+  // }, []);
+
   const { title, items } = collection;
   return (
     <div className="collection-page">
