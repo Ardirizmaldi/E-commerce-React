@@ -28,6 +28,10 @@ export const MenuItemContainer = styled.div`
   &:last-child {
     margin-left: 7.5px;
   }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+  }
 `;
 
 export const BackgroundImageContainer = styled.div`
@@ -49,6 +53,10 @@ export const Content = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+  @media screen and (max-width: 800px) {
+    height: 75px;
+    padding: 5px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -56,6 +64,9 @@ export const Title = styled.h1`
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
+  @media screen and (max-width: 800px) {
+    margin-top: 5px;
+  }
 `;
 
 export const Subtitle = styled.span`
