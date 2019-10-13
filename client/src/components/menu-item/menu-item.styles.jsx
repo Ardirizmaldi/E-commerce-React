@@ -55,7 +55,7 @@ export const Content = styled.div`
   position: absolute;
   @media screen and (max-width: 800px) {
     height: 75px;
-    padding: 5px;
+    padding: 15px;
   }
 `;
 

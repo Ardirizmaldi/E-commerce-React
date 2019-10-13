@@ -6,13 +6,17 @@ export const CollectionPreviewContainer = styled.div`
   margin-bottom: 30px;
 
   @media screen and (max-width: 800px) {
-    align-items: center;
+    align-items: left;
   }
 `;
 
 export const TitleText = styled.h1`
   font-size: 28px;
   margin-bottom: 25px;
+  @media screen and (max-width: 800px) {
+    margin-top: 0;
+    align-items: left;
+  }
 `;
 
 export const PreviewContainer = styled.div`
