@@ -14,7 +14,6 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
   }, [fetchCollectionsStart]);
 
   return (
-    <div className="shop-page">
       <Suspense fallback={<Spinner/>}>
         <Route
           exact
@@ -26,7 +25,6 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
           component={CollectionPageContainer}
         />
       </Suspense>
-    </div>
   );
 };
 

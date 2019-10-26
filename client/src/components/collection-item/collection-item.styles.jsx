@@ -50,6 +50,7 @@ export const AddButton = styled(CustomButton)`
 export const ImageItem = styled.div`
   width: 100%;
   height: 95%;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 5px;
@@ -72,4 +73,5 @@ export const NameContainer = styled.span`
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
+  margin-right: 10px;
 `;

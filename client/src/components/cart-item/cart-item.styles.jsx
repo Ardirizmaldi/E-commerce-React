@@ -9,6 +9,9 @@ export const CartItemContainer = styled.div`
 
 export const ItemImage = styled.img`
   width: 30%;
+  @media screen and (max-width: 800px) {
+    width: 40%;
+  }
 `;
 
 export const ItemDetails = styled.div`
