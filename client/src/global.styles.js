@@ -52,7 +52,8 @@ a {
 
     @media screen and (max-width: 800px) {
     right: 5.5vw;
-    top: 96vh;
+    top: 97vh;
+    font-size: 11px;
   }
 }
 `;

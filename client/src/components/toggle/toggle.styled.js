@@ -23,7 +23,7 @@ export const ToggleContainer = styled.button`
   @media screen and (max-width: 800px) {
       width: 5rem;
       height: 3rem;
-      top: 90vh;
+      top: 89.5vh;
   }
 
   svg {

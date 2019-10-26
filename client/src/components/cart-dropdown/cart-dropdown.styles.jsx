@@ -18,6 +18,8 @@ export const CartDropdownContainer = styled.div`
   @media screen and (max-width: 800px) {
     width: 200px;
     height: 280px;
+    top: 65px;
+    right: 10px;
   }
 `;
 
@@ -41,6 +43,7 @@ export const CartItemContainer = styled.div`
 {
     width: 7px;
     background-color: #F5F5F5;
+    margin-bottom: 2px;
 }
 
 ::-webkit-scrollbar-thumb
