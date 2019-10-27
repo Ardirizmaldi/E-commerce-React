@@ -1,6 +1,7 @@
 .collection-page {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 
   .title {
     font-size: 38px;
@@ -19,7 +20,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 15px;
-      margin-left: 15px;
     }
   }
 }
